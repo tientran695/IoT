@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">T-Home</string>
+    <string name="speech_prompt">Say something&#8230;</string>
+    <string name="speech_not_supported">Thiết bị không hỗ trợ</string>
+</resources>

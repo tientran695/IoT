@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_login_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/login2"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:text="T-Home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30sp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/ip_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.00"
+        android:hint="Nhập địa chỉ máy chủ" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:text="Kết nối"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/holo_red_dark"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        android:layout_gravity="center"
+        android:text="Design by TienTN"
+        android:textSize="15dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="90dp"/>
+
+</LinearLayout>

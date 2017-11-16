@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="hust.set.tientran695.iot.MainActivity"
+    android:weightSum="1">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thông tin cảm biến"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:padding = "5dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="5dp">
+
+        <TextView
+            android:text="Nhiệt độ:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.48"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_nhietdo"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:padding="5dp">
+
+        <TextView
+            android:text="Độ ẩm:"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_weight="0.52"/>
+
+        <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_doam"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <Button
+        android:text="Cập nhật"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Update"
+        android:layout_gravity="center"
+        android:textSize="18dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:onClick="btb_UpdateProcess"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Điều khiển thiết bị"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+    
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thiết bị 1                "
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="15dp"/>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thiết bị 2                "
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thiết bị 3                "
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <Switch
+        android:id="@+id/switch4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thiết bị 4                "
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:paddingBottom="10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biểu đồ nhiệt độ"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+
+    <WebView
+        android:id="@+id/Webview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light">
+    </WebView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Biểu đồ độ ẩm"
+        android:gravity="center"
+        android:textSize="24dp"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_red_dark"/>
+
+    <WebView
+        android:id="@+id/Webview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light">
+    </WebView>
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:gravity="center"
+        android:textColor="@color/colorPrimaryDark"/>
+
+</LinearLayout>
+</ScrollView>
